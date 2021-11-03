@@ -109,7 +109,7 @@ def clear_temp_folder():
 # Returns a list of pdf label files
 def list_all_label_files():
     files = [f for f in listdir(LABEL_PATH) if isfile(join(LABEL_PATH,f))]
-    print('FOUND {file_count} labels listed below.'.format(file_count = len(label_files)))
+    print('FOUND {file_count} labels listed below.'.format(file_count = len(files)))
     print('\n'.join(files))
     
     return files
